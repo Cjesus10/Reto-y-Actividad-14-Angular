@@ -1,0 +1,17 @@
+
+<section class="container mt-5">
+    <h3 class="text-center">FORMULARIO</h3>
+    <form>
+        <label for="">Nombre:</label>
+        <input type="text" class="form-control" name="nombre" [(ngModel)]="nom">
+        <label for="dni">DNI:</label>
+        <input type="text" class="form-control" name="dni" [(ngModel)]="dni">
+        <label for="estado">Estado Civil:</label>
+        <select name="estado" id="" class="form-control" name="estado" [(ngModel)]="est">
+            <option value="soltero">Soltero</option>
+            <option value="casado">Casado</option>
+            <option value="divorciado">Divorciado</option>
+        </select>
+        <button class="btn btn-primary mt-3" (click)="GuardarDatos(); EnviarDatos1()">Enviar</button>
+    </form>
+</section>
